@@ -107,6 +107,12 @@ body {
   background-position: center;
   height: 300px;
   margin-top: 3vh;
+
+  transition: all 1s ease-out;
+}
+
+.title-container:hover {
+  transform: rotate(720deg);
 }
 
 .title-container > img {
