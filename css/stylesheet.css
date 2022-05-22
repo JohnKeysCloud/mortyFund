@@ -99,6 +99,8 @@ body {
   justify-content: center;
   align-items: center;
 
+  filter: drop-shadow(0 0 30px black);
+
   background: url('../imgs/portal.png');
   background-size: 300px;
   background-repeat: no-repeat;
@@ -164,6 +166,9 @@ body {
   font-size: 8rem;
   margin: 0 0 20px 0;
   text-shadow: 0 0 10px #fffce8;
+
+  filter: drop-shadow(0 0 30px black);
+
 }
 
 .p-container p {
