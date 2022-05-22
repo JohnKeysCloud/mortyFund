@@ -1,5 +1,5 @@
 let password = document.getElementById("password")
-      , confirm_password = document.getElementById("password_confirm");
+    , confirm_password = document.getElementById("password_confirm");
 
 const valid = document.getElementById('pass_match');
     
