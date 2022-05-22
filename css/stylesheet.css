@@ -86,7 +86,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
 
-  background: url('/imgs/upsetMorty.png');
+  background: url('../imgs/upsetMorty.png');
   background-size: cover;
   background-position: center;
   height: 100vh;
