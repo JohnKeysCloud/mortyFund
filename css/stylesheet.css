@@ -4,6 +4,20 @@
   └─────────────────────────────────────────────────────────────────────────────┘
  */
 
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+} 
+
 @font-face {
   font-family: 'getSchwifty';
   src: url(../fonts/getSchwifty.woff2);
@@ -45,12 +59,12 @@
   }
 }
 
-@keyframes border-left {
+@keyframes border-right {
   from {
-    border-left: 1px solid chartreuse;
+    border-right: 1px solid chartreuse;
   }
   to {
-    border-left: 3px solid chartreuse;
+    border-right: 3px solid chartreuse;
   } 
 }
 
@@ -91,6 +105,8 @@ body {
   background-position: center;
   height: 100vh;
   width: 35%;
+  
+  animation: border-right 200ms linear infinite alternate;
 }
 
 .title-container {
@@ -162,8 +178,6 @@ body {
   background-color: rgb(1, 150, 1);
   height: 30vh;
   padding: 0 50px;
-
-  animation: border-left 200ms linear infinite alternate;
 }
 
 .p-container h1 {
@@ -192,8 +206,6 @@ body {
   background-color: #fffce8;
   height: 50vh;
   padding: 0 50px;
-
-  animation: border-left 200ms linear infinite alternate;
 }
 
 .mid-container h3 {
@@ -268,8 +280,6 @@ body {
   background-color: rgb(1, 150, 1);
   height: 20vh;
   padding: 0 50px;
-
-  animation: border-left 200ms linear infinite alternate;
 }
 
 .button-transform {
@@ -355,6 +365,23 @@ body {
   color: #C13838;
   font-size: 1.2rem;
   padding: 0 10px;
+}
+
+.displayBadge {
+    font-size: 1.1rem;
+    color: #fffce8;
+    margin: 0 0 0 8px; 
+    opacity: 0.7;
+    display: none; 
+    text-align: center;
+    padding: 3px 3px;
+    border-radius: 5px;
+    width: max-content;
+}
+
+input[type="password"]:focus ~ .displayBadge {
+  transform: scale(1.1);
+  margin-top: 5px ;
 }
 
 input[type="password"] ~ p {

@@ -60,13 +60,14 @@
           <div class="bottom-form">
               <div class="input-flex">
                 <label for="password">PASSWORD</label>
-                <input type="password" id="password" placeholder="********" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+                <input type="password" id="password" placeholder="********" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})" class="passwordInput" required>
+                <span id="pass_strength" class="badge displayBadge">Pathetic</span>
                 <p id="pass_requirements">*Password must include at least one uppercase letter, number & special character... or so help me Rick, I'll slap the sh*t out of you.</p>
               </div>
 
               <div class="input-flex">
                 <label for="password">CONFIRM PASSWORD</label>
-                <input type="password" id="password_confirm" placeholder="********" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+                <input type="password" id="password_confirm" placeholder="********" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})" required>
                 <p id="pass_match"></p>
               </div>
           </div>
