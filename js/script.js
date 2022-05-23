@@ -52,6 +52,6 @@ function validatePassword(){
     }
 }
 
-password.setCustomValidity("*Password must include at least one uppercase letter, number & special character... or so help me Rick, I'll slap the sh*t out of you.");
 password.onchange = validatePassword;
 password_confirm.onkeyup = validatePassword;
+// password.setCustomValidity("*Password must include at least one uppercase letter, number & special character... or so help me Rick, I'll slap the sh*t out of you.");
